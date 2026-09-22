@@ -22,9 +22,9 @@ const Product = () => {
   }, [dispatch]);
 
   let filterdata = products.filter((product) =>
-    product.title
-      .toLowerCase()
-      .includes(search.toLowerCase())
+    product?.title
+      ? product.title.toLowerCase().includes(search.toLowerCase())
+      : false
   );
 
   if (sort === "low") {
