@@ -5,6 +5,7 @@ import {
   clearCart,
 } from "./cartSlice";
 
+
 import { placeOrder } from "./OrderSlice";
 
 const Cart = () => {
